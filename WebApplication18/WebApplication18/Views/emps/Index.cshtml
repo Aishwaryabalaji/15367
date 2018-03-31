@@ -1,0 +1,88 @@
+﻿@model IEnumerable<WebApplication18.Models.emp>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_id)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.ename)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dob)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.guardian)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.doj)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bpay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.deptid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.desigid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.placeid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.districtid)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ename)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dob)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.guardian)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.doj)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bpay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.deptid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.desigid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.placeid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.districtid)
+        </td>
+        <td>
+            |
+            @Html.ActionLink("Details", "Details", new { id = item.emp_id }) |
+
+        </td>
+    </tr>
+}
+
+</table>

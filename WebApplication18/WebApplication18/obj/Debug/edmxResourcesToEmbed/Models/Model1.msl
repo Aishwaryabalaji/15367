@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Database1ModelStoreContainer" CdmEntityContainer="Database1Entities">
+    <EntitySetMapping Name="deps">
+      <EntityTypeMapping TypeName="Database1Model.dep">
+        <MappingFragment StoreEntitySet="dep">
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="deptname" ColumnName="deptname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="des">
+      <EntityTypeMapping TypeName="Database1Model.de">
+        <MappingFragment StoreEntitySet="des">
+          <ScalarProperty Name="desigid" ColumnName="desigid" />
+          <ScalarProperty Name="desig" ColumnName="desig" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dists">
+      <EntityTypeMapping TypeName="Database1Model.dist">
+        <MappingFragment StoreEntitySet="dist">
+          <ScalarProperty Name="districtid" ColumnName="districtid" />
+          <ScalarProperty Name="district" ColumnName="district" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="emps">
+      <EntityTypeMapping TypeName="Database1Model.emp">
+        <MappingFragment StoreEntitySet="emp">
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+          <ScalarProperty Name="ename" ColumnName="ename" />
+          <ScalarProperty Name="dob" ColumnName="dob" />
+          <ScalarProperty Name="guardian" ColumnName="guardian" />
+          <ScalarProperty Name="doj" ColumnName="doj" />
+          <ScalarProperty Name="bpay" ColumnName="bpay" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="desigid" ColumnName="desigid" />
+          <ScalarProperty Name="placeid" ColumnName="placeid" />
+          <ScalarProperty Name="districtid" ColumnName="districtid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="places">
+      <EntityTypeMapping TypeName="Database1Model.place">
+        <MappingFragment StoreEntitySet="place">
+          <ScalarProperty Name="placeid" ColumnName="placeid" />
+          <ScalarProperty Name="place1" ColumnName="place" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

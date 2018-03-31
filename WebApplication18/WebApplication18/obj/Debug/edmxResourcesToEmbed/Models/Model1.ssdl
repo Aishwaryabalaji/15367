@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="dep">
+    <Key>
+      <PropertyRef Name="deptid" />
+    </Key>
+    <Property Name="deptid" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="deptname" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="des">
+    <Key>
+      <PropertyRef Name="desigid" />
+    </Key>
+    <Property Name="desigid" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="desig" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="dist">
+    <Key>
+      <PropertyRef Name="districtid" />
+    </Key>
+    <Property Name="districtid" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="district" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="emp">
+    <Key>
+      <PropertyRef Name="emp_id" />
+    </Key>
+    <Property Name="emp_id" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ename" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="dob" Type="date" Nullable="false" />
+    <Property Name="guardian" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="doj" Type="date" Nullable="false" />
+    <Property Name="bpay" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="deptid" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="desigid" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="placeid" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="districtid" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="place">
+    <Key>
+      <PropertyRef Name="placeid" />
+    </Key>
+    <Property Name="placeid" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="place" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Database1ModelStoreContainer">
+    <EntitySet Name="dep" EntityType="Self.dep" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="des" EntityType="Self.des" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dist" EntityType="Self.dist" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="emp" EntityType="Self.emp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="place" EntityType="Self.place" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
